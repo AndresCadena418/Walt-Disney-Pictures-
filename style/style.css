@@ -51,18 +51,26 @@ h1{
     font-family: 'Tajawal', sans-serif;
 }
 
+div{
+    position: relative;
+    width: 1251px;
+    height: 732px;
+    left: 189px;
+}
+
 section{
     position: relative;
-    background-color:#000F25;
-    margin-left: 191px;
-    width: 1249px;
+    background-color: #000F25;
+    width: 1251px;
     height: 366px;
 }
 
 .slider {
-    margin-top: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 466px;
+    height: 366px;
 	overflow: hidden;
 }
 
@@ -70,7 +78,7 @@ section{
     margin-top: -29px;
 	display: flex;
 	padding: 0;
-    width: 1249px;
+    width: 1251px;
 	animation: cambio 20s infinite alternate linear;
 }
 
@@ -80,7 +88,7 @@ section{
 }
 
 .slider img {
-    width: 1249px;
+    width: 1251px;
     height: 430px;
 }
 
@@ -99,18 +107,26 @@ section{
 }
 
 div section:nth-child(2) h1{
+    position: absolute;
+    top: 21px;
+    left: 40px;
     color: white;
-    width: 20px;
+    font-family: 'Tajawal', sans-serif;
 }
 div section:nth-child(2) ul{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
 div section:nth-child(2) li img{
+    position: absolute;
+    top: 0;
     width: 145px;
     height: 191px;
 }
-div section:nth-child(2) ul li :hover{
+div section:nth-child(2) ul li :hover {
     background-color: white;
     width: 145px;
     height: 191px;
