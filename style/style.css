@@ -89,9 +89,11 @@ section{
 
 .slider img {
     width: 1251px;
-    height: 430px;
+    height: 366px;
 }
-
+section div :hover{
+    background-color: black;
+}
 @keyframes cambio {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
