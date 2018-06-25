@@ -4,50 +4,77 @@
    padding: 0px;
 }
 
-header{
-   background-color:#ECF9FF; 
-   padding: 10px;
+body{
+   width:100%;
+   height:100%;
 }
 
-header h1{
-   margin-left: 210px;
-}
-
-nav ul li a:hover{
-   width: 200px;
+nav ul li:hover{
+   position: relative;
+   width: 189px;
+   left: 0;
    background-color: #C5E7FF;
+}
+
+.click{
+   position: absolute;
+   width: 173px;
+   height: 60px;
+   left: 0;
+   background-color: #C5E7FF; 
 }
    
 nav{
-   float: left;
-   width: 150px;
-   height: 749px;
-   margin: -57px 0px;
-   padding: 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 189px;
+   height: 794px;
    font-size: 20px;
    background:#ECF9FF;
 }
 
 nav a{
+   position: absolute; 
    color: #0079B1;
    padding: 6px 8px;
    text-decoration: none;  
 }
 
 nav img{
-   width: 150px;
-   height: 180px;
+    width: 172px;
+    height: 194px;
+    position: relative;
+    left: 8px;
+    top: 13px;
+}
+ nav ul{
+    position: relative;
+    top: 20px;
+    height: 258px;
+ }
+
+nav:nth-child(2) ul{
+    position: relative;
+    top: 20px;
+    height: 259px;    
 }
 
 li{
-    margin-top: 29px;
-    height: 37px;
+    position: relative;
+    height: 72px;
     list-style: none;  
     font-family: 'Tajawal', sans-serif;
 }
 
-h1{
-    margin-top: -3px;
+
+
+nav h1{
+    position: relative;
+    top: -19px;
+    left: 8px;
+    width: 108px;
+    font-size: 20px;
     font-family: 'Tajawal', sans-serif;
 }
 
@@ -62,7 +89,7 @@ section{
     position: relative;
     background-color: #000F25;
     width: 1251px;
-    height: 366px;
+    height: 397px;
 }
 
 .slider {
@@ -70,12 +97,11 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    height: 366px;
+    height: 397px;
 	overflow: hidden;
 }
 
 .slider ul {
-    margin-top: -29px;
 	display: flex;
 	padding: 0;
     width: 1251px;
@@ -89,10 +115,10 @@ section{
 
 .slider img {
     width: 1251px;
-    height: 366px;
+    height: 397px;
 }
 section div :hover{
-    background-color: black;
+    filter: grayscale(80%);
 }
 @keyframes cambio {
 	0% {margin-left: 0;}
@@ -110,8 +136,10 @@ section div :hover{
 
 div section:nth-child(2) h1{
     position: absolute;
-    top: 21px;
-    left: 40px;
+    font-weight: normal;
+    font-size: 70px;
+    top: -3px;
+    left: 35px;
     color: white;
     font-family: 'Tajawal', sans-serif;
 }
@@ -128,34 +156,36 @@ div section:nth-child(2) li img{
     width: 145px;
     height: 191px;
 }
-div section:nth-child(2) ul li :hover {
-    background-color: white;
-    width: 145px;
-    height: 191px;
-}
 div section:nth-child(2) li  {
     position: relative;
-    top: 49px;
-    margin-left: 21px;
-    width: 100px;
-    height: 100px;
+    top: 125px;
+    width: 145px;
+    height: 191px;
     display: inline-block;
 }
+
 div section:nth-child(2) li:nth-child(1) {
-    left: 20px;
+    left: 40px;
 }
 div section:nth-child(2) li:nth-child(2){
-    left: 100px;
+    left: 95px;
 }
 div section:nth-child(2) li:nth-child(3){
-    left: 180px;
+    left: 150px;
 }
 div section:nth-child(2) li:nth-child(4){
-    left: 260px;
+    left: 207px;
 }
 div section:nth-child(2) li:nth-child(5){
-    left: 340px;
+    left: 265px;
 }
 div section:nth-child(2) li:nth-child(6){
-    left: 420px;
+    left: 322px;
 }
+div section:nth-child(2) ul li :hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    filter: opacity(.5);
+}
+
+
+
