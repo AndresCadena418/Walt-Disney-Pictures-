@@ -117,9 +117,14 @@ section{
     width: 1251px;
     height: 397px;
 }
-section div :hover{
-    filter: grayscale(80%);
+section div{
+    filter: grayscale(0%);
+    transition: filter .5s 0s;    
 }
+section div:hover{
+    filter: grayscale(80%);
+  }
+
 @keyframes cambio {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
@@ -137,8 +142,8 @@ section div :hover{
 div section:nth-child(2) h1{
     position: absolute;
     font-weight: normal;
-    font-size: 70px;
-    top: -3px;
+    font-size: 50px;
+    top: 18px;
     left: 35px;
     color: white;
     font-family: 'Tajawal', sans-serif;
@@ -157,35 +162,75 @@ div section:nth-child(2) li img{
     height: 191px;
 }
 div section:nth-child(2) li  {
-    position: relative;
+    position: absolute;
     top: 125px;
     width: 145px;
     height: 191px;
     display: inline-block;
+    overflow: hidden;
 }
 
 div section:nth-child(2) li:nth-child(1) {
     left: 40px;
 }
 div section:nth-child(2) li:nth-child(2){
-    left: 95px;
+    left: 237px;
 }
 div section:nth-child(2) li:nth-child(3){
-    left: 150px;
+    left: 0;
+    right: 210px;
+    margin: auto;
 }
 div section:nth-child(2) li:nth-child(4){
-    left: 207px;
+    left: 210px;
+    right: 0;
+    margin: auto;
 }
 div section:nth-child(2) li:nth-child(5){
-    left: 265px;
+    right: 237px;
 }
 div section:nth-child(2) li:nth-child(6){
-    left: 322px;
+    right: 40px;
 }
-div section:nth-child(2) ul li :hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
-    filter: opacity(.5);
+div section:nth-child(2) li:hover img{
+    filter: blur(0.8px);
 }
-
-
-
+div section:nth-child(2) li article{
+    position: absolute;
+    top: 0;
+    left: 115px;
+    width: 145px;
+    height: 191px;
+    background-color: rgba(0, 25, 252, 0.54);
+    transition-property: left,opacity,visibility;
+    transition-delay: 0s;
+    transition-duration: .55s, .35s, .25s;
+    visibility: hidden;
+    opacity: 0;
+}
+div section:nth-child(2) li:hover article{
+    left: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+div section:nth-child(2) ul li article h2{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    font-family: sans-serif;
+    border-bottom: solid 1px blanchedalmond;
+}
+div section:nth-child(2) ul li article p{
+    padding: 10px;
+    font-size: 13px;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+}
+#caratula{
+    position: relative;
+    width: 218px;
+    height: 289px;
+    top: 89px;
+    left: 37px;
+}
